@@ -1,0 +1,46 @@
+p::first-line{
+
+    font-size: 20px;
+}
+
+div p:nth-of-type(even)
+{
+    color: red;
+}
+
+div p:nth-child(3n)
+{
+    font-family: cursive;
+}
+
+table tr:nth-child(odd){
+    background-color: aquamarine;
+
+}
+
+table tr:nth-child(even){
+    background-color: rgb(201, 12, 226);
+
+}
+
+table td:nth-child(3)
+{
+    font-weight: bolder;
+}
+
+p::first-letter
+{
+    text-decoration: underline;
+    
+}
+
+div p:nth-of-type(4)::after, div p:nth-child(8)::after
+{
+ content: url("Character_Firefly_Splash_Art.webp "  );
+
+}
+
+div p:nth-child(5)
+{
+    font-style: italic;
+}    

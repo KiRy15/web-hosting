@@ -1,0 +1,50 @@
+form{
+    margin-left: 10%;
+    border: 3px solid black;
+    width: 500px;
+    height:max-content;
+}
+
+input:hover{
+     background-color: yellow;
+
+}
+
+textarea:hover{
+    background-color: yellow;
+
+}
+
+textarea
+{
+    background-color: black;
+    color: red;
+}
+
+input:out-of-range 
+{
+ background-color: red;
+}
+
+input:in-range
+{
+    background-color: aquamarine;
+}
+
+input:optional
+{
+    background-color: pink;
+}
+
+ label{
+    
+    font-weight: bolder;
+}
+
+div>button{
+    position: relative ;
+    left:20%;
+
+
+}
+

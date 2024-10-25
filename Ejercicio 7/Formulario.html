@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="formulariocss.css">
+</head>
+<body>
+    
+    <form action="gestion.php" method="post">
+    <h3>Rellena tu CV</h3>
+    
+    <div >
+    <div><label for="nombre" >Escriba su nombre</label></div>
+    <input type="text" name="nombre" id="nombre" required >
+    <div><label for="ape"  >Escriba su apellido </label></div>
+
+    <input type="text" name="apellido" size="50px" required>
+       
+    </div>
+
+     <div><label for="DNI" >Introduzca DNI</label></div>
+    
+    <input type="text" name="DNI" pattern="(\d{8})([A-Z]{1})" 
+     title="Se deben insertar 8 digitos y 1 letra"
+     placeholder="8 digitos y 1 letra" required
+     >
+
+    <div><label for="sexo"  >Sexo:</label></div> 
+    <div> <label for="sexo" >Masculino</label>
+        <input type="radio" name="sexo" value="Hombre" required>
+    </div>
+    <div>
+         <label for="sexo" >Femenino</label>
+     <input type="radio" name="sexo" value="Femenino" required>
+    </div>
+    <br>
+
+
+
+        <label for="foto">Incluir mi foto</label>
+        <input type="search" name="foto">
+        <button>Elegir mi foto</button>
+
+    <br>
+   
+    <div>
+        <input type="checkbox" name="confirmar" required>
+         <label for="sus">Suscribirme al boletín de novedades</label></div>
+   
+    
+    
+    <div> <br><label for="contraseña" >Introduzca su contraseña</label></div> 
+    <input type="password" name="contraseña" id="pas"required>
+
+    <div><br><label for="fecha_nac">Fecha nacimiento</label></div>
+  
+    <input type="date" name="fecha_nac" id="fecha_nac" required min="1924-01-01" max="2024-01-01">
+
+    <div><br><label for="">Text area</label>
+        <br><textarea name="textarea" readonly required>CV-LM</textarea></div>
+    
+        <div>
+              <label for="email"  >Introduzca su correo electronico</label>
+        </div>
+        <input type="email" name="email" id="email" size="50" multiple required>
+        
+        <div>
+            <label for="años" >Años trabajado</label>
+      </div>
+      <input type="number" name="años"  min="0" max="50" required>
+  
+
+       <br>
+       <br>
+       <div>
+        <button onclick="alert('¡Error!')"> Guardar Cambios</button>
+        <button type="reset">Borrar los datos introducidos</button>
+       </div>
+   
+
+    
+
+</form>
+</body>
+
+</html>
